@@ -1,0 +1,31 @@
+<section class="conlist">
+<article>
+  <h1>Contact List</h1>
+  {{#each payload}}
+  
+  <div class="list">
+    <ul>
+      <li>First Name:{{this.fname}}</li><br>
+      <li>Last Name:{{this.lname}}</li><br>
+      <li>Number:{{this.nmbr}}</li><br>
+      <li> Saved Location:{{this.loc}}</li>
+      
+    </ul>
+    <li class="btn-group">
+      <span class="cntInfo">
+      <a href="/api/{{this._id}}">Info</a>
+    </span>
+    <span class="edit">
+      <a href="/api/edit/{{this._id}}">Edit</a>
+    </span>
+    <span class="delete">
+      <a href="/api/delete/{{this._id}}">Delete</a>
+    </span>
+    </li>
+  </div>
+
+  {{else}}
+  <h1>No Contact Please Create contacts</h1>
+  {{/each}}
+</article>
+</section>

@@ -1,0 +1,445 @@
+*{
+  
+  /* background-color:cornflowerblue; */
+  /* background: linear-gradient(to right, #616aa4, #a85fac); */
+ 
+  font-family: sans-serif;
+  
+}
+
+
+
+.c1{
+  width: 400px;
+  height: 300px;
+  
+  color: azure;
+}
+.con-group{
+  font-family: sans-serif;
+  color: black;
+  font-size:20px;
+}
+.con-group #fname{
+  height: 20px;
+  width: 200px;
+  border: none;
+  border-bottom:1px solid black;
+}
+.con-group #lname{
+  height: 20px;
+  width: 200px;
+  border: none;
+  border-bottom:1px solid black;
+}
+.con-group #nmbr{
+  height: 20px;
+  width: 200px;
+  border: none;
+  border-bottom:1px solid black;
+}
+#navbar-list{
+  display: flex;
+  background-color:rgb(72, 71, 71);
+  height: 50px;
+  padding: 15px;
+  margin: 20px;
+  border-radius: 10px;
+  justify-content: space-around;
+}
+#navbar-list a{
+  margin-top: 10px;
+  margin-left: 30px;
+  text-decoration: none;
+}
+#navbar-list li{
+  list-style-type: none;
+  font-size: 17px;
+  height: 30px;
+  width: 120px;
+  background-color: #f0ecf0;
+  text-align: center;
+  padding-top: 5px;
+  border-radius: 10px;
+}
+
+.homepage{
+  height: 350px;
+  background: linear-gradient(to right, #2aaf90, #4994ce);
+  width: 1000px;
+  margin-left: 160px;
+  text-align: center;
+  border-radius: 10px;
+  padding-top: 60px;
+}
+#app-name{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 40px;
+}
+.homepage span{
+background-color:transparent;
+ font-size: 35px;
+ 
+ border-radius: 7px;
+}
+.homepage p{
+  background: linear-gradient(to right, #2aaf90, #4994ce);
+  font-size: 25px;
+  margin: 30px 50px;
+}
+footer {
+  margin-top: 40px;
+  background: linear-gradient(to right, #282c34, #3a3f47);
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.footer-links a {
+  color: #ffffff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-social a {
+  margin: 0 8px;
+  display: inline-block;
+}
+
+.footer-social img {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1); /* Makes icons white */
+}
+
+.footer-social img:hover {
+  filter: brightness(1); /* Restores icon color on hover */
+}
+
+.footer-copyright p {
+  font-size: 12px;
+  margin: 10px 0 0;
+}
+
+
+
+
+
+
+
+
+.add-contact-form {
+  background: #74beb7;
+  border-radius: 10px;
+  padding: 25px 30px;
+  margin-left: 250px;
+  max-width: 800px;
+ 
+  width: 90%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.add-contact-form form{
+  margin-left: 200px;
+}
+/* Heading Styles */
+.add-contact-form h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* Form Group Styles */
+.con-group {
+  width: 400px;
+  margin-bottom: 15px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+}
+
+.con-group #loc{
+  width: 225px;
+}
+#btn{
+  width: 200px;
+  margin-top: 20px;
+  margin-left: 120px;
+  color: #282c34;
+}
+.con-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.con-group input,
+.con-group select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Input and Select Focus */
+.con-group input:focus,
+.con-group select:focus {
+  border: 1px solid #6dd5ed;
+  box-shadow: 0 0 5px rgba(109, 213, 237, 0.5);
+  outline: none;
+}
+
+/* Submit Button */
+button[type="submit"] {
+  width: 100%;
+  padding: 12px 20px;
+  background: linear-gradient(to right, #6dd5ed, #2193b0);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background: linear-gradient(to right, #57c6e1, #197da0);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+  .add-contact-form {
+    padding: 20px;
+  }
+
+  .add-contact-form h1 {
+    font-size: 20px;
+  }
+
+  button[type="submit"] {
+    font-size: 14px;
+  }
+}
+
+
+
+
+
+/* General Section Styling */
+.conlist {
+  background: #c7c4e2;
+  padding: 30px 20px;
+  border-radius: 10px;
+  max-width: 1000px;
+  margin: 20px auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+/* Article Styling */
+.conlist article {
+  text-align: center;
+}
+
+.conlist h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Styling for the Contact List */
+.list {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  padding: 15px;
+  text-align: left;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.list:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* List Items */
+.list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list ul li {
+  font-size: 16px;
+  color: #555;
+  margin: 8px 0;
+}
+
+/* .list ul li:first-of-type {
+  font-weight: bold;
+} */
+
+.list ul li:last-child {
+  margin-bottom: 0;
+}
+
+/* Divider Line */
+.list hr {
+  border: 0;
+  border-top: 1px solid #eee;
+  margin: 10px 0 0 0;
+}
+
+/* Message for No Contacts */
+.conlist h1:last-child {
+  color: #999;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+
+/* btn css */
+
+
+/* Style for the list item */
+.btn-group {
+  list-style: none;
+  display: flex;
+  gap: 10px; /* Spacing between buttons */
+  padding: 0;
+  margin: 0;
+}
+
+/* Style for each span containing the links */
+.btn-group span {
+  display: inline-block;
+}
+
+/* Style for the links (buttons) */
+.btn-group a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 20px;
+  color: #fff; /* Button text color */
+  background-color: #007bff; /* Primary button color */
+  border: 1px solid #0056b3;
+  border-radius: 5px; /* Rounded corners */
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect */
+.btn-group a:hover {
+  background-color: #0056b3; /* Darker color on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Style for specific spans if needed */
+.cntInfo a {
+  background-color: #28a745; /* Green for Info */
+  border-color: #218838;
+}
+
+.cntInfo a:hover {
+  background-color: #218838;
+}
+
+.edit a {
+  background-color: #ffc107; /* Yellow for Edit */
+  border-color: #e0a800;
+}
+
+.edit a:hover {
+  background-color: #e0a800;
+}
+
+.delete a {
+  background-color: #dc3545; /* Red for Delete */
+  border-color: #c82333;
+}
+
+.delete a:hover {
+  background-color: #c82333;
+}
+
+ul{
+  display: flex;
+  justify-content: space-around;
+}
+ul li{
+  margin-left: 20px;
+}
+
+
+/* single contact  */
+/* Style for the unordered list */
+.c3 {
+  list-style-type: none; /* Remove default bullets */
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6; /* Space between lines */
+  background-color: #f9f9f9; /* Light background for the container */
+  border: 1px solid #ddd; /* Border around the list */
+  border-radius: 8px; /* Rounded corners */
+  width: 1000px; /* Set a fixed width */
+  margin-left: 130px;
+  height: 50px;
+  padding: 15px; /* Padding inside the container */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+/* Style for individual list items */
+.c3 li {
+  margin-bottom: 10px; /* Space between list items */
+  color: #333; /* Text color */
+}
+
+/* Highlight label and value separately */
+.c3 li span {
+  font-weight: bold; /* Bold for labels */
+  color: #555; /* Slightly darker color for labels */
+}
+
+/* Add a subtle hover effect to the list items */
+.c3 li:hover {
+  background-color: #f0f0f0; /* Light gray background on hover */
+  border-radius: 4px; /* Slightly rounded effect */
+  padding: 5px; /* Extra padding on hover */
+}
+
+/* Optional: Add styles for <br> tag for consistency */
+.c3 br {
+  display: none; /* Hide unnecessary <br> tags for a cleaner layout */
+}
